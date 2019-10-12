@@ -1,0 +1,2 @@
+include ':app', ':horinzontaltransformers'
+rootProject.name='ViewPager2PageTransformers'

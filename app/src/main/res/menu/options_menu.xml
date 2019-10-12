@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mi_background_to_foreground"
+            android:title="BackgroundToForeground" />
+        <item
+            android:id="@+id/mi_cube_in"
+            android:title="CubeIn" />
+        <item
+            android:id="@+id/mi_cube_out"
+            android:title="CubeOut" />
+        <item
+            android:id="@+id/mi_depth"
+            android:title="Depth" />
+        <item
+            android:id="@+id/mi_flip_horizontal"
+            android:title="FlipHorizontal" />
+        <item
+            android:id="@+id/mi_flip_vertical"
+            android:title="FlipVertical" />
+        <item
+            android:id="@+id/mi_foreground_to_background"
+            android:title="ForegroundToBackground" />
+        <item
+            android:id="@+id/mi_rotate_down"
+            android:title="RotateDown" />
+        <item
+            android:id="@+id/mi_rotate_up"
+            android:title="RotateUp" />
+        <item
+            android:id="@+id/mi_tablet"
+            android:title="Tablet" />
+        <item
+            android:id="@+id/mi_zoom_in"
+            android:title="ZoomIn" />
+        <item
+            android:id="@+id/mi_zoom_out"
+            android:title="ZoomOut" />
+    </group>
+</menu>
