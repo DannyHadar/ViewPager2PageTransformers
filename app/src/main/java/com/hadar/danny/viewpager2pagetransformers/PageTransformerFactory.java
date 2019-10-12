@@ -4,7 +4,7 @@ import com.hadar.danny.horinzontaltransformers.*;
 
 import androidx.viewpager2.widget.ViewPager2;
 
-public final class PageTransformerFactory {
+final class PageTransformerFactory {
 
     private static final BackgroundToForegroundTransformer sBackgroundToForegroundTransformer = new BackgroundToForegroundTransformer();
 
@@ -30,33 +30,33 @@ public final class PageTransformerFactory {
 
     private static final ZoomOutTransformer sZoomOutTransformer = new ZoomOutTransformer();
 
-    public static ViewPager2.PageTransformer getTransformer(int id) {
+    static ViewPager2.PageTransformer getTransformer(int id) {
         switch (id) {
             case R.id.mi_background_to_foreground:
-                return new BackgroundToForegroundTransformer();
+                return sBackgroundToForegroundTransformer;
             case R.id.mi_cube_in:
-                return new CubeInTransformer();
+                return sCubeInTransformer;
             case R.id.mi_cube_out:
-                return new CubeOutTransformer();
+                return sCubeOutTransformer;
             case R.id.mi_depth:
-                return new DepthTransformer();
+                return sDepthTransformer;
             case R.id.mi_flip_horizontal:
-                return new FlipHorizontalTransformer();
+                return sFlipHorizontalTransformer;
             case R.id.mi_flip_vertical:
-                return new FlipVerticalTransformer();
+                return sFlipVerticalTransformer;
             case R.id.mi_foreground_to_background:
-                return new ForegroundToBackgroundTransformer();
+                return sForegroundToBackgroundTransformer;
             case R.id.mi_rotate_down:
-                return new RotateDownTransformer();
+                return sRotateDownTransformer;
             case R.id.mi_rotate_up:
-                return new RotateUpTransformer();
+                return sRotateUpTransformer;
             case R.id.mi_tablet:
-                return new TabletTransformer();
+                return sTabletTransformer;
             case R.id.mi_zoom_in:
-                return new ZoomInTransformer();
+                return sZoomInTransformer;
             default:
             case R.id.mi_zoom_out:
-                return new ZoomOutTransformer();
+                return sZoomOutTransformer;
         }
     }
 }
